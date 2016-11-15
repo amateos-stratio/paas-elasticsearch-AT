@@ -1,6 +1,9 @@
 @Library('libpipelines@feature/multibranch') _
 
 hose {
+    EMAIL = 'qa'
+    SLACKTEAM = 'stratioqa'
+    MODULE = 'pipelines'
     
     ATTIMEOUT = 30
     
