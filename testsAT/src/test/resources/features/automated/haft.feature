@@ -3,8 +3,7 @@ Feature: High Availability and Fault Tolerance testing
 
   Background: Setup PaaS REST client
     Given I want to authenticate in DCOS cluster '${DCOS_CLUSTER}' with email '${DCOS_EMAIL}' with user '${DCOS_USER}' and password '${DCOS_PASSWORD}' using pem file '${DCOS_PEM}'
-    Then I obtain mesos master in cluster '${DCOS_CLUSTER}' and store it in environment variable 'mesosMaster'
-    And I send requests to '!{mesosMaster}:${MESOS_API_PORT}'
+    And I send requests to '${DCOS_CLUSTER}:${MESOS_API_PORT}'
 
   Scenario: [HA-Spec-01] Scheduler MUST register with a failover timeout
     Given I send a 'GET' request to '/frameworks'
