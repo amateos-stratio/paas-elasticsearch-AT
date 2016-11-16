@@ -20,14 +20,18 @@ import com.stratio.tests.utils.BaseTest;
 import cucumber.api.CucumberOptions;
 import org.testng.annotations.Test;
 
-@CucumberOptions(features = { "src/test/resources/features/automated/functionality.feature" })
-public class functionality extends BaseTest {
+@CucumberOptions(features = { "src/test/resources/features/automated/purge.feature" })
+public class IT_purge extends BaseTest {
 
-    public functionality() {
+    public IT_purge() {
     }
 
-    @Test(enabled = true, groups = {"functionality"}, dependsOnGroups = {"installation"})
-    public void configuration() throws Exception {
+    @Test(enabled = true, groups = {"purge"}, dependsOnGroups = {"installation",
+                                                                 "functionality",
+                                                                 "haft",
+                                                                 "serviceDiscovery",
+                                                                 "configuration"})
+    public void purge() throws Exception {
         new CucumberRunner(this.getClass()).runCukes();
     }
 }
