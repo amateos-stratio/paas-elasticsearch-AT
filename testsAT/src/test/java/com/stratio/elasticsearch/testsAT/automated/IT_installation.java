@@ -21,9 +21,9 @@ import cucumber.api.CucumberOptions;
 import org.testng.annotations.Test;
 
 @CucumberOptions(features = { "src/test/resources/features/automated/installation.feature" })
-public class installation extends BaseTest {
+public class IT_installation extends BaseTest {
 
-    public installation() {
+    public IT_installation() {
     }
 
     @Test(enabled = true, groups = {"installation"})
