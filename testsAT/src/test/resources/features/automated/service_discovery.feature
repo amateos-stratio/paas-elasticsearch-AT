@@ -4,7 +4,6 @@ Feature: Service discovery testing
   Background: Mesos-DNS must know the service info
     Given I open remote ssh connection to host '${DCOS_CLI_HOST}' with user '${DCOS_USER}' and password '${DCOS_PASSWORD}'
 
-  @include(feature:installation.feature,scenario:InstallUninstall-Spec-01. A service CAN be installed from the CLI)
   Scenario: ServiceDiscovery-Spec-01 - Mesos-DNS MUST create the service
     Given I want to authenticate in DCOS cluster '${DCOS_CLUSTER}' with email '${DCOS_EMAIL}' with user '${DCOS_USER}' and password '${DCOS_PASSWORD}' using pem file '${DCOS_PEM}'
     And I send requests to '${DCOS_CLUSTER}:${DCOS_CLUSTER_PORT}'
