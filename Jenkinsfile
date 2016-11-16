@@ -3,7 +3,7 @@
 hose {
     EMAIL = 'qa'
     SLACKTEAM = 'stratioqa'
-    MODULE = 'pipelines'
+    MODULE = 'paasesAT'
     
     ATTIMEOUT = 30
     
