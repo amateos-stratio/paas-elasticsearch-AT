@@ -37,7 +37,7 @@ hose {
                     | """.stripMargin().stripIndent()
 
 
-    AT = { conf ->
-        doAT(conf)                
+    AT = { config ->
+        doAT(config)                
     }
 }
