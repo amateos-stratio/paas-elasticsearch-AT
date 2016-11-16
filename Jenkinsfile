@@ -4,6 +4,7 @@ hose {
     EMAIL = 'qa'
     SLACKTEAM = 'stratioqa'
     MODULE = 'paasesAT'
+    PARALLELIZE_AT = true
     
     ATTIMEOUT = 30
     
