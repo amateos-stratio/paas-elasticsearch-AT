@@ -8,7 +8,7 @@ hose {
     ATTIMEOUT = 30
     
     ATSERVICES = [
-            ['DCOSCLI':   ['image': 'stratio/dcos-cli:0.4.11'
+            ['DCOSCLI':   ['image': 'stratio/dcos-cli:0.4.11',
                            'env':    ['DCOS_URL=http://10.200.1.11',
                                       'SSH=true',
                                       'TOKEN_AUTHENTICATION=true',
@@ -16,7 +16,7 @@ hose {
                                       'DCOS_PASSWORD=stratiotest',
                                       'REMOTE_USER=root',
                                       'REMOTE_PASSWORD=stratio',
-                                      'MASTER_MESOS=10.200.1.11'],
+                                      'MASTER_MESOS=10.200.1.11',],
                            'sleep':  10]]
         ]
 
