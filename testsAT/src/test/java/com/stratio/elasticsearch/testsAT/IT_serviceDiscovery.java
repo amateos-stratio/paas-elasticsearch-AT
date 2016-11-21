@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.stratio.elasticsearch.testsAT.automated;
+package com.stratio.elasticsearch.testsAT;
 
 import com.stratio.cucumber.testng.CucumberRunner;
 import com.stratio.tests.utils.BaseTest;
 import cucumber.api.CucumberOptions;
 import org.testng.annotations.Test;
 
-@CucumberOptions(features = { "src/test/resources/features/automated/functionality.feature" })
-public class IT_functionality extends BaseTest {
+@CucumberOptions(features = { "src/test/resources/features/service_discovery.feature" })
+public class IT_serviceDiscovery extends BaseTest {
 
-    public IT_functionality() {
+    public IT_serviceDiscovery() {
     }
 
-    @Test(enabled = true, groups = {"functionality"}, dependsOnGroups = {"installation"})
-    public void configuration() throws Exception {
+    @Test(enabled = true, groups = {"serviceDiscovery"}, dependsOnGroups = {"installation"})
+    public void serviceDiscovery() throws Exception {
         new CucumberRunner(this.getClass()).runCukes();
     }
 }

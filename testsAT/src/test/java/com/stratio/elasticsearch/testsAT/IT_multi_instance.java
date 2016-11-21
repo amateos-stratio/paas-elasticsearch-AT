@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.stratio.elasticsearch.testsAT.automated;
+package com.stratio.elasticsearch.testsAT;
 
 import com.stratio.cucumber.testng.CucumberRunner;
 import com.stratio.tests.utils.BaseTest;
 import cucumber.api.CucumberOptions;
 import org.testng.annotations.Test;
 
-@CucumberOptions(features = { "src/test/resources/features/automated/multi_instance.feature" })
+@CucumberOptions(features = { "src/test/resources/features/multi_instance.feature" })
 public class IT_multi_instance extends BaseTest {
 
     public IT_multi_instance() {
